@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Swagat Kumar Sahoo | Full Stack Java Developer</title>
+
+    <meta name="description"
+        content="Projects by Swagat Kumar Sahoo – Full Stack Java Developer showcasing web applications, REST APIs, and software solutions.">
+
+    <meta name="keywords"
+        content="Swagat Kumar Sahoo, Full Stack Developer, Java Developer, Spring Boot, Hibernate, MySQL, MongoDB, Projects, Portfolio, Web Development, REST API, Software Engineer">
+
+    <meta name="author" content="Swagat Kumar Sahoo">
+
+    <link rel="shortcut icon" href="assets/img/logo/f-icon.png" type="image/x-icon">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        /* Logo SVG styling: subtle shadow, responsive sizing, small hover lift */
+        .site-logo-svg {
+            transition: transform .28s ease, filter .28s ease;
+            display: block
+        }
+
+        .site-logo-svg circle {
+            transform-origin: 50% 50%;
+            transition: transform .28s ease;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.32));
+        }
+
+        .site-logo-svg text {
+            pointer-events: none
+        }
+
+        .site-logo-svg:hover {
+            transform: translateY(-2px) scale(1.02)
+        }
+
+        .site-logo-svg:hover circle {
+            filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.42))
+        }
+
+        .site-logo-svg text:nth-of-type(1) {
+            font-weight: 700;
+            fill: #ffffff
+        }
+
+        .site-logo-svg text:nth-of-type(2) {
+            fill: #dce8ff
+        }
+
+        @media (max-width:768px) {
+            .site-logo-svg {
+                height: 36px !important
+            }
+        }
+
+        /* Skip link — visible on focus for keyboard users */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            background: #fff;
+            color: #000;
+            padding: 8px 12px;
+            border-radius: 4px;
+            z-index: 10000
+        }
+
+        .skip-link:focus {
+            left: 12px;
+            top: 12px;
+            width: auto;
+            height: auto;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12)
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ================= REQUIRED CSS (SAFE) ================= -->
+    <style>
+        .mobile_menu_wrap {
+            display: none;
+        }
+
+        .mobile_menu_wrap.active {
+            display: block;
+        }
+
+        body.mobile-menu-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="home-1" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-smooth-scroll="true">
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <div id="preloader"></div>
+
+    <div class="up">
+        <a href="#" class="scrollup text-center">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="cursor"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header id="bi-header" class="bi-header-section header-style-one">
+        <div class="bi-header-content">
+
+            <div class="bi-header-main-menu-cta-area d-flex align-items-center justify-content-between">
+
+                <!-- MAIN NAV -->
+                <div class="bi-header-main-navigation">
+                    <nav class="main-navigation clearfix ul-li">
+                        <ul id="main-nav" class="nav navbar-nav clearfix">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="portfolio-single.html">Projects</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#bi-skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#bi-experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="bi-header-social">
+                    <a href="https://www.linkedin.com/in/swagat-kumar-sahoo/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="mailto:swagatkumarsahoo2003@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+
+                <!-- HAMBURGER -->
+                <div class="offcanves-btn navSidebar-button">
+                    <button class="open_mobile_menu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle mobile menu">
+                        <i class="fal fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ================= MOBILE MENU ================= -->
+            <div class="mobile_menu position-relative">
+                <div class="mobile_menu_button open_mobile_menu" role="button" tabindex="0" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open mobile menu"><i class="fal fa-bars"></i></div>
+                <div id="mobileMenu" class="mobile_menu_wrap">
+
+                    <div class="mobile_menu_overlay open_mobile_menu"></div>
+
+                    <div class="mobile_menu_content">
+                        <div class="mobile_menu_close open_mobile_menu">
+                            <i class="fal fa-times"></i>
+                        </div>
+
+                        <nav class="mobile-main-navigation main-navigation clearfix ul-li text-center">
+                            <ul class="nav navbar-nav clearfix">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="portfolio-single.html">Projects</a></li>
+                                <li><a href="#bi-skills">Skills</a></li>
+                                <li><a href="#bi-experience">Experience</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="bi-mobile-header-social text-center">
+                            <a href="https://www.linkedin.com/in/swagat-kumar-sahoo/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="mailto:swagatkumarsahoo2003@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- ================= END HEADER ================= -->
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+        <section class="bi-portfolio-section"
+            style="padding:100px 0; background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);">
+
+            <div class="container">
+
+                <!-- Section Title -->
+                <div class="bi-section-title-1 text-center headline pera-content">
+                    <div class="bi-subtitle text-uppercase">My Projects</div>
+                    <h2 class="headline-title">Showcasing My Work</h2>
+                    <p>
+                        A curated collection of projects where I applied real-world development practices,
+                        clean architecture, and modern technologies.
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4" style="
+                  background:#fff;
+                  border-radius:16px;
+                  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+                  margin-bottom:30px;
+                  transition:all .3s ease;
+                " onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro1.jpg" alt="E-Commerce Platform"
+                                style="width:100%; border-radius:12px; margin-bottom:15px;">
+
+                            <h3>E-Commerce Platform</h3>
+                            <p>
+                                End-to-end e-commerce solution with secure authentication,
+                                product management, and order flow.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Spring
+                                    Boot</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">React</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Oracle</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer" style="
+                    display:inline-block;
+                    padding:10px 22px;
+                    background:#fe5151;
+                    color:#fff;
+                    border-radius:30px;
+                    text-decoration:none;
+                    font-weight:500;
+                  ">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4"
+                            style="background:#fff;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,0.12);margin-bottom:30px;transition:.3s"
+                            onmouseover="this.style.transform='translateY(-8px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro2.jpg" alt="Task Management App"
+                                style="width:100%;border-radius:12px;margin-bottom:15px;">
+
+                            <h3>Task Management App</h3>
+                            <p>
+                                Secure REST API with JWT authentication and role-based access control.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Spring
+                                    Boot</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">MongoDB</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">JWT</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;padding:10px 22px;background:#fe5151;color:#fff;border-radius:30px;text-decoration:none;">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4"
+                            style="background:#fff;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,0.12);margin-bottom:30px;transition:.3s"
+                            onmouseover="this.style.transform='translateY(-8px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro3.jpg" alt="Blog Platform"
+                                style="width:100%;border-radius:12px;margin-bottom:15px;">
+
+                            <h3>Blog Platform</h3>
+                            <p>
+                                Dynamic blogging platform with authentication, admin control, and comments.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Java</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">MySQL</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Servlets</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;padding:10px 22px;background:#fe5151;color:#fff;border-radius:30px;text-decoration:none;">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4"
+                            style="background:#fff;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,0.12);margin-bottom:30px;transition:.3s"
+                            onmouseover="this.style.transform='translateY(-8px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro4.jpg" alt="Weather Dashboard"
+                                style="width:100%;border-radius:12px;margin-bottom:15px;">
+
+                            <h3>Weather Dashboard</h3>
+                            <p>
+                                Real-time weather data visualization using third-party APIs.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">React</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">API</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Bootstrap</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;padding:10px 22px;background:#fe5151;color:#fff;border-radius:30px;text-decoration:none;">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4"
+                            style="background:#fff;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,0.12);margin-bottom:30px;transition:.3s"
+                            onmouseover="this.style.transform='translateY(-8px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro1.jpg" alt="Portfolio Website"
+                                style="width:100%;border-radius:12px;margin-bottom:15px;">
+
+                            <h3>Portfolio Website</h3>
+                            <p>
+                                Fully responsive personal portfolio with smooth UX and animations.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">HTML</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">CSS</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">JavaScript</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;padding:10px 22px;background:#fe5151;color:#fff;border-radius:30px;text-decoration:none;">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-item text-center p-4"
+                            style="background:#fff;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,0.12);margin-bottom:30px;transition:.3s"
+                            onmouseover="this.style.transform='translateY(-8px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <img src="assets/img/portfolio/pro2.jpg" alt="Microservices Architecture"
+                                style="width:100%;border-radius:12px;margin-bottom:15px;">
+
+                            <h3>Microservices Architecture</h3>
+                            <p>
+                                Distributed system with service discovery, gateway, and fault tolerance.
+                            </p>
+
+                            <div style="margin-bottom:15px;">
+                                <span style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Spring
+                                    Cloud</span>
+                                <span
+                                    style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">Eureka</span>
+                                <span style="background:#eef1ff;padding:6px 10px;border-radius:20px;font-size:12px;">API
+                                    Gateway</span>
+                            </div>
+
+                            <a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;padding:10px 22px;background:#fe5151;color:#fff;border-radius:30px;text-decoration:none;">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= MOBILE MENU FIX SCRIPT ================= -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggles = document.querySelectorAll(".open_mobile_menu");
+            const menu = document.querySelector(".mobile_menu_wrap");
+            const body = document.body;
+
+            if (!menu) return;
+
+            toggles.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("active");
+                    body.classList.toggle("mobile-menu-active");
+                });
+            });
+
+            document.querySelectorAll(".mobile_menu_content a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    body.classList.remove("mobile-menu-active");
+                });
+            });
+        });
+    </script>
+
+
+<!-- Start of Footer section -->
+<footer id="bi-footer" class="bi-footer-section"
+    style="background:url(assets/img/bg/footer-bg.jpg) center/cover no-repeat;">
+
+    <!-- CTA -->
+    <div class="bi-footer-cta" style="padding:60px 0;">
+        <div class="container">
+            <div style="background:url(assets/img/bg/cta-bg.jpg) center/cover no-repeat;
+                       border-radius:16px;
+                       padding:40px 30px;
+                       display:flex;
+                       align-items:center;
+                       justify-content:space-between;
+                       flex-wrap:wrap;
+                       gap:20px;">
+                <h3 style="margin:0;color:#fff;font-size:24px;">
+                    Looking for an experienced fresher?
+                </h3>
+
+                <a href="contact.html" style="padding:14px 34px;
+                           background:#fe5151;
+                           color:#fff;
+                           border-radius:40px;
+                           text-decoration:none;
+                           font-weight:600;
+                           text-transform:uppercase;">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Widgets -->
+    <div class="bi-footer-widget-content" style="padding:70px 0 50px;">
+        <div class="container">
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-lg-5">
+                    <h3 style="color:#fff;font-size:22px;margin-bottom:15px;">
+                        Hello, I'm Swagat Kumar Sahoo
+                    </h3>
+                    <p style="color:#d7d7d7;line-height:1.7;">
+                        Full Stack Java Developer passionate about building scalable web applications
+                        and clean user experiences. I enjoy transforming ideas into production-ready solutions.
+                    </p>
+                </div>
+
+                <!-- Approach -->
+                <div class="col-lg-4">
+                    <h3 style="color:#fff;font-size:20px;margin-bottom:15px;">
+                        My Approach
+                    </h3>
+                    <ul style="list-style:none;padding:0;color:#d7d7d7;line-height:2;">
+                        <li>• Learn by building, not watching</li>
+                        <li>• Write code humans can understand</li>
+                        <li>• Improve something every day</li>
+                        <li>• Master fundamentals before frameworks</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3">
+                    <h3 style="color:#fff;font-size:20px;margin-bottom:15px;">
+                        Let’s Talk
+                    </h3>
+                    <ul style="list-style:none;padding:0;color:#d7d7d7;line-height:2;">
+                        <li>
+                            <a href="mailto:swagatkumarsahoo2003@gmail.com" style="color:#d7d7d7;text-decoration:none;">
+                                swagatkumarsahoo2003@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/918249088372?text=Hello%20Swagat,%20I%20saw%20your%20portfolio!"
+                                target="_blank" rel="noopener noreferrer" style="color:#d7d7d7;text-decoration:none;">
+                                WhatsApp Available
+                            </a>
+                        </li>
+                        <li>Open to Internships & Junior Roles</li>
+                        <li>Based in India · Remote Friendly</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Social -->
+    <div style="border-top:1px solid rgba(255,255,255,0.1);padding:25px 0;">
+        <div class="container">
+            <ul style="list-style:none;
+                       display:flex;
+                       justify-content:center;
+                       flex-wrap:wrap;
+                       gap:25px;
+                       padding:0;
+                       margin:0;">
+                <li><a href="https://www.linkedin.com/in/swagat-kumar-sahoo/" target="_blank" rel="noopener noreferrer"
+                        style="color:#fff;text-decoration:none;">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/mr.swagat05" target="_blank" rel="noopener noreferrer"
+                        style="color:#fff;text-decoration:none;">Facebook</a></li>
+                <li><a href="https://www.instagram.com/___.swagat._____/" target="_blank" rel="noopener noreferrer"
+                        style="color:#fff;text-decoration:none;">Instagram</a></li>
+                <li><a href="https://wa.me/918249088372" target="_blank" rel="noopener noreferrer"
+                        style="color:#fff;text-decoration:none;">WhatsApp</a></li>
+                <li><a href="https://github.com/swagatkumarsahoo" target="_blank" rel="noopener noreferrer"
+                        style="color:#fff;text-decoration:none;">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Logo -->
+    <div style="padding:40px 0;text-align:center;">
+        <a href="index.html" aria-label="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" style="height:36px;">
+                <defs>
+                    <linearGradient id="logoMain" x1="0" x2="1" y1="0" y2="1">
+                        <stop offset="0" stop-color="#6c63ff" />
+                        <stop offset="1" stop-color="#00e5ff" />
+                    </linearGradient>
+                </defs>
+                <circle cx="20" cy="20" r="14" fill="url(#logoMain)" />
+                <text x="20" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">S</text>
+                <text x="52" y="25" font-size="12" font-weight="700" fill="#fff">
+                    Swagat
+                </text>
+            </svg>
+        </a>
+
+        <p style="margin-top:15px;">
+            <a href="mailto:swagatkumarsahoo2003@gmail.com" style="color:#d7d7d7;text-decoration:none;">
+                swagatkumarsahoo2003@gmail.com
+            </a>
+        </p>
+    </div>
+
+    <!-- Copyright -->
+    <div style="text-align:center;padding:20px 0;color:#aaa;font-size:14px;">
+        © 2025 Swagat Kumar Sahoo. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<!-- For Js Library -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollToPlugin.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/hover-revel.js"></script>
+<script src="assets/js/split-type.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/matter.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
